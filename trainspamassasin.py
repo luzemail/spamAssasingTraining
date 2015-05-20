@@ -59,7 +59,7 @@ def launchsalearn(folder,spam):
     prefix=" --ham "
     if spam:
         prefix=" --spam "
-    print "executing %s in %s" % prefix %folder
+    print "executing %s in %s" % (prefix, folder)
     os.system("/usr/bin/sa-learn"+ prefix+ folder)
     return
 
